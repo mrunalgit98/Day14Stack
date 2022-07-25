@@ -28,5 +28,16 @@ public class Main {
         System.out.println("pop value " +pv3);
         
         System.out.println("Stack is empty");
+        
+        System.out.println("-------------");
+        
+        Stacks l2=new Stacks();
+        l2.add(56);
+        l2.add(30);
+        l2.add(70);
+        System.out.println("element in queue");
+        l2.display();
+        
+        
 	}
 }

@@ -1,7 +1,5 @@
 package com.stacks;
 
-
-
 public class Stacks <T>{
 	
 node head;
@@ -45,9 +43,17 @@ public void pop(T peakValue) {
 	node<T> nextnode=n1.next;
 	head=nextnode;
 	n1.next=null;
-	n1.data= null;
-	
-	
+	n1.data= null;	
 }
-
+public void add(T data) {
+    node<T> newNode=new node<>(data);
+    if(head==null){
+        head=newNode;
+        tail=newNode;
+    }
+    else {
+        tail.next = newNode;
+        tail = newNode;
+    }
+}
 }
