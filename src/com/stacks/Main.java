@@ -32,12 +32,30 @@ public class Main {
         System.out.println("-------------");
         
         Stacks l2=new Stacks();
-        l2.add(56);
-        l2.add(30);
         l2.add(70);
+        l2.add(30);
+        l2.add(56);
         System.out.println("element in queue");
         l2.display();
+        System.out.println("------------");
         
+        Stacks l3=new Stacks();
+        l3.add(70);
+        l3.add(30);
+        l3.add(56);
+        System.out.println("element in queue");
+        l3.display();
+        
+        System.out.println("Dequeue operation");
+        l3.pop(70);
+        System.out.println("first dequeue");
+        l3.display();
+        l3.pop(30);
+        System.out.println("second dequeue");
+        l3.display();
+        l3.pop(56);
+        System.out.println("after third dequeue");
+        l3.display();
         
 	}
 }
