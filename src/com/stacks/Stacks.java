@@ -2,7 +2,7 @@ package com.stacks;
 
 
 
-public class Stacks {
+public class Stacks <T>{
 	
 node head;
 node tail;
@@ -27,15 +27,27 @@ public void display() {
 		temp=temp.next;
 	}
 }
-public class node{
+public class node<T>{
 
-    public  int data;
-    public node next;
+    public  T data;
+    public node<T> next;
 
-    public node(int data) {
+    public node(T data) {
         this.data = data;
-   
+    }    
+}
+public T peek(){
+	return (T) head.data;
+}
+public void pop(T peakValue) {
+	node<T> n1=new node<>(peakValue);
+	n1=head;
+	node<T> nextnode=n1.next;
+	head=nextnode;
+	n1.next=null;
+	n1.data= null;
+	
+	
+}
 
-}
-}
 }

@@ -8,5 +8,25 @@ public class Main {
         l1.push(56);
         System.out.println("element in stack");
         l1.display();
+        
+        
+        Integer pv1=(Integer)l1.peek();
+        l1.pop(pv1);
+        System.out.println("peek value " +pv1);
+        System.out.println("pop value " +pv1);
+        l1.display();
+        
+        Integer pv2=(Integer) l1.peek();
+        l1.pop(pv2);
+        System.out.println("peek value " +pv2);
+        System.out.println("pop value " +pv2);
+        l1.display();
+        
+        Integer pv3 =(Integer)l1.peek();
+        l1.pop(pv3);
+        System.out.println("peek value " +pv3);
+        System.out.println("pop value " +pv3);
+        
+        System.out.println("Stack is empty");
 	}
 }
